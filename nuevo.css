@@ -1,0 +1,105 @@
+.row{
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+}
+
+.modal-header{
+	padding-right: 0px !important;
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+	padding-left: 0px !important;
+	border-bottom: 0px !important;
+}
+
+.modal-body{
+	padding-right: 0px !important;
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+	padding-left: 0px !important;
+}
+
+#col1Header{
+	background-color: #606060;
+	height: 50px;
+}
+
+#col11Header{
+	background-color: blue;
+	height: 50px;
+}
+
+.col1Body{
+	background-color: #505050;
+	height: 320px;
+}
+
+#nuevoServicio{
+	padding-top: 12px;
+}
+
+#formularioCarga input{ 
+	border-top: 0px !important;
+	border-left: 0px !important;
+	border-right: 0px !important;
+	box-shadow: none !important;
+	border-bottom-color: DimGrey !important;
+	border-bottom-width: 2px;
+	border-radius: 0px;
+}
+
+#formularioCarga select{ 
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	box-shadow: none;
+	border-radius: 0px;
+	border-bottom-color: DimGrey;
+	border-bottom-width: 2px;
+
+}
+
+#nuevoServicio{
+	color: white;
+}
+
+#buttonForm{
+	background-color: DimGrey !important;
+	border: none !important;
+	color: white !important;
+	background-image: none !important;
+	outline: none !important;
+}
+
+.step{
+  background: #505050;
+  border-radius: 0.8em;
+  border-color: white !important;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  color: white;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.6em;
+  margin-right: 5px;
+  text-align: center;
+  width: 1.6em;
+  margin-top: 40px; 
+}
+
+.activePass {
+  background: white;
+  color: #505050;
+}
+
+#plus{
+	padding-left: 0px;
+	width: 50px;
+}
+
+#agregar{
+	margin-bottom: 0px !important;
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+	margin-top: 0px !important;
+	color: white; 
+}

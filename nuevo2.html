@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <!-- Modals -->
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="nuevo.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Steps -->
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="modal-steps.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+  
+  <!-- Boton que lleva al modal -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Agregar Servicio</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <div class="row" id="rowHeader">
+            <div class="col-sm-1" id="col1Header">
+              <div class="container" id="plus">
+                <h1 id="agregar">+</h1>
+              </div>
+            </div>
+            <div class="col-sm-11" id="col11Header">
+              <h4 class="modal-title" id="nuevoServicio">Nuevo Servicio</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Fin Modal Header -->
+        
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <div class="row" id="rowBody">
+            
+            <form action="" method="post" id="formularioCarga">
+              <!-- Primer Paso -->
+              <div class="row hide" data-step="1" data-title="Primer Paso">
+                <!-- Aqui va la barra lateral -->
+                <div class="col-sm-1 col1Body">
+                  <span class="step activePass">1</span>
+                  <span class="step">2</span>
+                  <span class="step">3</span>
+                  <span class="step">4</span>             
+                </div>
+                <!-- Aqui va la informacion -->
+                <div class="col-sm-11 col11Body">
+                  <h4 class="titulosForm">Datos Básicos</h4>                
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Nombre" required>
+                    </div>
+                    <div class="form-group">
+                      <select class="form-control" id="sel1" required>
+                        <option value="Categoria" selected hidden disabled>Categoria</option>
+                        <option value="Alimentos">Alimentos</option>
+                        <option value="Ambientes">Ambientes</option>
+                        <option value="Arquitectura, Urbanismo y Arte">Arquitectura, Urbanismo y Arte</option>
+                        <option value="Biología">Biología</option>
+                        <option value="Energía">Energía</option>
+                        <option value="Manufactura, Instrumentación y Control">Manufactura, Instrumentación y Control</option>
+                        <option value="Matemáticas y Estadísticas">Matemáticas y Estadísticas</option>
+                        <option value="Mecánica y Materiales">Mecánica y Materiales</option>
+                        <option value="Química">Química</option>
+                        <option value="Física">Física</option>
+                        <option value="Informática, Computación, Comunicación e Información">Informática, Computación, Comunicación e Información</option>
+                        <option value="Música">Música</option>
+                        <option value="Salud">Salud</option>
+                        <option value="Otros">Otros</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <select class="form-control" id="sel2" required>
+                        <option value="Tipo" selected hidden disabled>Tipo</option>
+                        <option value="Ensayo">Ensayo</option>
+                        <option value="Calibracion">Calibracion</option>
+                        <option value="Ambientes">Ambientes</option>
+                        <option value="Inspección">Inspección</option>
+                        <option value="Desarrollo de Prototipos y Piezas">Desarrollo de Prototipos y Piezas</option>
+                        <option value="Consultoría / Asesoría Técnica y Proyectos">Consultoría / Asesoría Técnica y Proyectos</option>
+                        <option value="Formación / Capacitación / Transferencia Tecnológica">Formación / Capacitación / Transferencia Tecnológica</option>
+                        <option value="Sala de Computadoras">Sala de Computadoras</option>
+                        <option value="Sala de Videos">Sala de Videos</option>      
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <h6>Función</h6>
+                      <div class="checkbox">
+                        <label><input type="checkbox">Docencia</label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox">Investigación</label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox">Extensión</label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox">Gestión</label>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <!-- Fin Primer Paso -->
+
+              <!-- Segundo Paso -->
+                <div class="row hide" data-step="2" data-title="Segundo Paso">
+                  <!-- Aqui va la barra lateral -->
+                  <div class="col-sm-1 col1Body">
+                    <span class="step">1</span>
+                    <span class="step activePass">2</span>
+                    <span class="step">3</span>
+                    <span class="step">4</span> 
+                  </div>
+
+                  <!-- Aqui va la informacion -->
+                  <div class="col-sm-11 col11Body">
+                  <h4 class="titulosForm">Datos Básicos</h4>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="objetivo" placeholder="Objetivo">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="alcance" placeholder="Alcance">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="metodo" placeholder="Método">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="rango" placeholder="Rango">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="incertidumbre" placeholder="Incertidumbre">
+                  </div>
+                </div>
+              </div>
+              <!-- Fin Segundo Paso -->
+
+
+              <!-- Tercer Paso -->
+                <div class="row hide" data-step="3" data-title="Tercer Paso">
+                  <!-- Aqui va la barra lateral -->
+                  <div class="col-sm-1 col1Body">
+                    <span class="step">1</span>
+                    <span class="step">2</span>
+                    <span class="step activePass">3</span>
+                    <span class="step">4</span> 
+                  </div>
+                  
+                  <!-- Aqui va la informacion -->
+                  <div class="col-sm-11 col11Body">
+                  <h4 class="titulosForm">Responsable</h4>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="responsable" placeholder="Responsable">
+                    </div>
+                    <div class="form-group">
+                      <select class="form-control" id="sel3 name="" required>
+                        <option value="Dependencia" selected hidden>Dependencia</option>  
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <select class="form-control" id="sel4" name="" required>
+                        <option value="Unidad de Adscripción" selected hidden disabled>Unidad de Adscripción</option>
+                        <option value="Laboratorio A">Laboratorio A</option>
+                        <option value="Laboratorio B">Laboratorio B</option>
+                        <option value="Laboratorio C">Laboratorio C</option>
+                        <option value="Laboratorio D">Laboratorio D</option>
+                        <option value="Laboratorio E">Laboratorio D</option>
+                        <option value="Laboratorio F">Laboratorio D</option>
+                        <option value="Laboratorio G">Laboratorio G</option>  
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <select class="form-control" id="sel5" name="" required>
+                        <option value="Ubicación Física" selected hidden disabled>Ubicación Física</option> 
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <select class="form-control" id="sel6" name="" required>
+                        <option value="Sede" selected hidden disabled>Sede</option>
+                        <option value="Sartenejas">Sartenejas</option>
+                        <option value="Litoral">Litoral</option>
+                      </select>
+                    </div>
+                </div>
+              </div>
+              <!-- Fin Tercer Paso -->
+
+              <!-- Cuarto Paso -->
+                <div class="row hide" data-step="4" data-title="Cuarto Paso">
+                  <!-- Aqui va la barra lateral -->
+                  <div class="col-sm-1 col1Body">
+                    <span class="step">1</span>
+                    <span class="step">2</span>
+                    <span class="step">3</span>
+                    <span class="step activePass">4</span> 
+                  </div>
+
+                  <!-- Aqui va la informacion -->
+                  <div class="col-sm-11 col11Body" >
+                  <h4 class="titulosForm">Especificaciones</h4>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="item" placeholder="Item a ensayar">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="requisitos" placeholder="Requisitos">
+                  </div>
+                  <div class="form-group">
+                    <input type="" class="form-control" id="resultados" placeholder="Resultados">
+                  </div>
+                  <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+              </div>
+              <!-- Fin Cuarto Paso -->
+
+            </form>
+
+        </div>
+        </div>
+        <!-- Fin Modal Body -->
+
+        <!-- Modal Footer -->
+        <div class="modal-footer">
+            <button type="button" id="buttonForm" class="btn btn-default js-btn-step pull-left" data-orientation="cancel" data-dismiss="modal"></button>
+            <button type="button" id="buttonForm" class="btn btn-warning js-btn-step" data-orientation="previous"></button>
+            <button type="button" id="buttonForm" class="btn btn-primary btn-success js-btn-step" data-orientation="next"></button>
+        </div>
+        <!-- Fin Footer -->
+      </div> 
+      <!-- Fin Modal Content--> 
+
+    </div>
+  </div>
+  <!-- Fin Modal--> 
+ 
+</div>
+<!-- Fin Container -->
+
+<script>
+$('#myModal').modalSteps();
+</script>
+
+</body>
+</html>
